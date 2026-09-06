@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<appSettings>
+		<add key="GEMINI_API_KEY" value=YOUR_API_KEY/>
+		<add key="GEMINI_API_ENDPOINT" value="https://generativelanguage.googleapis.com/v1beta/models"/>
+		<add key="GEMINI_MODEL" value="gemini-3.6-flash"/>
+	</appSettings>
+</configuration>
