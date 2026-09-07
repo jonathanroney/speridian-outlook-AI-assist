@@ -41,7 +41,7 @@ Each button in the ribbon opens the respective form for the tool, where the user
 <img width="392" height="121" alt="Picture3" src="https://github.com/user-attachments/assets/316932e4-73b8-407a-a366-8b1a21d9bf37" />
 
 ### Services  
-Rather than handling the computation behind each tool in the forms, these service classes handle the actual functions that perform the tasks, including AI API calls, parsing, etc.
+Rather than handling the computation behind each tool in the forms, they call functions from the service classes which actually perform the tasks, including AI API calls, parsing, etc. The only tasks performed by the ribbon are related to opening and closing the various Outlook object models like mailItems, Inspectors, and Explorers.
 
 <img width="2720" height="1720" alt="outlook_addin_architecture" src="https://github.com/user-attachments/assets/d5d9177c-4642-488e-a8db-8bea830160a5" />
 
