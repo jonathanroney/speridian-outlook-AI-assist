@@ -68,6 +68,12 @@ Upon pressing the Spell Check button, a loading form is displayed while the cont
 
 <img width="376" height="107" alt="Picture5" src="https://github.com/user-attachments/assets/1f9d5519-fc37-4b13-881d-a611a44100ee" />
 
+## Reply Assist
+
+Opens the Reply Assist form, where the user is prompted to enter the content of the email they want to reply to (this is done instead of copying the content of the open mailItem because the add-in does not support images yet - it also keeps user privacy by letting them choose what they want the tool to read.), and also the reply instructions for generation. The email content, reply instructions, and appropriate context are then sent as a request to the API, and the response is appropriately parsed to paste in the correct areas of the mailItem. A label instructs the user to keep the mail they want to reply to open so that after receiving a response, the program creates a new mailItem with the appropriate receiver email address and subject along with the generated body. If there is no mailItem open, or if either of the input boxes are empty, an error is displayed using a message box.
+
+<img width="797" height="372" alt="Screenshot 2026-09-07 105841" src="https://github.com/user-attachments/assets/2c6f3ac5-3cf3-4dc1-81d5-53b0e35b7574" />
+
 ## Language Conversion
 
 The Language Conversion form allows the user to strictly select from a list of 43 languages to translate TO. The program sends the content of the open mailItem as a request to the API along with the appropriate context and the target language. Upon receiving the translated text, the contents of the mailItem are replaced with the output. If there is no mailItem open, a message box with the error message is displayed.
