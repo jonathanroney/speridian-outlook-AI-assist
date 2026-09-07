@@ -113,11 +113,12 @@ Comprehensive list of errors that the program handles and displays:
 
 ## Configuration
 
-As mentioned before, an app.config file must be set up containing the API key, API endpoint, and model name. This can be made using the app.config.template file included in the repo.
+As mentioned before, an app.config file must be set up containing the API key, API endpoint, and model name. This can be made using the app.config.template file included in the repo. Clone the repository and open the project in Visual Studio (ensuring the .CONFIG file is present already), and go to Build → Build Solution (or Ctrl+Shift+B). This compiles your code into OutlookAddIn1.dll and generates the VSTO manifest files needed for Outlook to recognize it as an add-in. Then press F5 (or go to Debug → Start Debugging), and the add-in should be installed even when Outlook is opened outside Visual Studio. Note: refer to future enhancements section.
 
 ## Future enhancements
 
-Potential image processing capabilities – could be used for cases like replying to emails more appropriately or a more immersive chatbot.
+- Potential image processing capabilities – could be used for cases like replying to emails more appropriately or a more immersive chatbot.
+- Publish as a more compact release build for easier installation and set up.
 
 ## Test results
 
